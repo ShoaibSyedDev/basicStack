@@ -10,6 +10,7 @@ using namespace std;
 int performOper(char, int, int);
 
 int main() {
+	//Main funtion
 	//int result = 0;
 	//Defining first STACK object 
 	cStack inputStack, aidStack;
@@ -95,10 +96,16 @@ int performOper(char opr, int num1, int num2) {
 
 	else if (opr == '/'){
 		if (num1 > num2)
-			return (num1 / num2);
+			{
+				return (num1 / num2);
+			}
 		else
-			return (num2 / num1);
+		{
+				return (num2 / num1);
+		}
 	}
 	else 
-		return (num1 % num2);
+	{
+			return (num1 % num2);
+	}
 }
